@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TicTacToe</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="TTT.png">
+</head>
+<body> 
+    <div id="toastBar"></div>
+    <div class="another-container">
+    <h1>TicTacToe</h1>
+    <p>Just answer the question and then take your turn.</p>
+</div>
+<div class="another-container">
+    <h4 id="question">mango or apple</h4>
+    <div id="options">
+        <button id="option1" class="answer" onclick="user_answer(this.innerHTML)">Options</button>
+        <button id="option2" class="answer" onclick="user_answer(this.innerHTML)">Options</button>
+        <button id="option3" class="answer" onclick="user_answer(this.innerHTML)">Options</button>
+        <button id="option4" class="answer" onclick="user_answer(this.innerHTML)">Options</button>
+    </div>
+    <p>Current Turn: <span id="turn"></span></p>
+    <button onclick="clear_board()">Clear Board</button>
+</div>
+    <div id="container">
+        <div id="slot1" onclick="trigger(0)"></div>
+        <div id="slot2" onclick="trigger(1)"></div>
+        <div id="slot3" onclick="trigger(2)"></div>
+        <div id="slot4" onclick="trigger(3)"></div>
+        <div id="slot5" onclick="trigger(4)"></div>
+        <div id="slot6" onclick="trigger(5)"></div>
+        <div id="slot7" onclick="trigger(6)"></div>
+        <div id="slot8" onclick="trigger(7)"></div>
+        <div id="slot9" onclick="trigger(8)"></div>
+    </div>
+    <script type="module" src="src.js"></script>
+    <!-- <script src="trivia_api.js"></script> -->
+</body>
+</html>
