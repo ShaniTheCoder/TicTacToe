@@ -1,8 +1,7 @@
 :root {
-    --dark-theme :#1a1a1a;
-    --nice-red: #a70a26;
-    --gradient-1:#cb5b0a;
-    --gradient-2:#1b6ead;
+    --shadow-charcoal :#1a1a1a;
+    --crimson-blaze: #a70a26;
+    --light-pink: #f7a7a0;
     
 }
 
@@ -11,20 +10,23 @@
     padding: 0;
 }
 body {
-    background: linear-gradient(var(--gradient-1),var(--gradient-2));
+    background: radial-gradient(var(--crimson-blaze),var(--shadow-charcoal));
     background-repeat: no-repeat;
     height: 100vh;
     display: flex;
+    flex-wrap: nowrap;
     flex-direction: column;
     justify-content: space-between; 
     align-items: center;
     text-align: center;
-    
-    
+}
+.font-color {
+    color: var(--light-pink)   ;
+    text-shadow: 0 0 5px var(--shadow-charcoal), 0 0 10px var(--crimson-blaze);
 }
 #container {
-    background-color: var(--dark-theme);
-    color:var(--nice-red) ;
+    background-color: var(--shadow-charcoal);
+    color:var(--crimson-blaze) ;
     border-radius:10%;
     display: grid;
     grid-template-columns: repeat(3, 100px);  
@@ -62,8 +64,8 @@ body {
     border-radius: 0 0 30% 0;
 }
 #question {
-    color: var(--nice-red);
-    background-color: var(--dark-theme);
+    color: var(--crimson-blaze);
+    background-color: var(--shadow-charcoal);
     width: fit-content;
     margin: 0 auto;
     padding: 4px 8px;
@@ -72,8 +74,8 @@ body {
 #user_input {
     padding: 5px 8px;
     border: none;
-    background: var(--nice-red);
-    color: var(--dark-theme);
+    background: var(--crimson-blaze);
+    color: var(--shadow-charcoal);
     border-radius: 5px;
     font-size: 1.1em;
     margin:8px;
@@ -83,15 +85,15 @@ button, .answer:hover{
     padding: 5px 8px;
     font-size: 0.95em;
     border-radius: 5px;
-    background-color: var(--dark-theme);
-    color:var(--nice-red);
+    background-color: var(--shadow-charcoal);
+    color:var(--crimson-blaze);
     font-weight: 600;
-    text-shadow: 0 0 5px black,0 0 8px var(--nice-red);
+    text-shadow: 0 0 5px black,0 0 8px var(--crimson-blaze);
 }
 button:hover{
-    color:var(--dark-theme);
-    background-color: var(--nice-red);
-    text-shadow: 0 0 5px var(--nice-red),0 0 8px black;
+    color:var(--shadow-charcoal);
+    background-color: var(--crimson-blaze);
+    text-shadow: 0 0 5px var(--crimson-blaze),0 0 8px black;
 }
 #options{
     margin: 15px;
@@ -103,16 +105,16 @@ button:hover{
     justify-content: center;
 }
 .answer{
-    background: var(--nice-red);
-    color: var(--dark-theme);
-    text-shadow: 0 0 5px var(--nice-red), 0 0 10px black;
+    background: var(--crimson-blaze);
+    color: var(--shadow-charcoal);
+    text-shadow: 0 0 5px var(--crimson-blaze), 0 0 10px black;
 }
 #toastBar {
     border-radius: 10%;
     visibility: hidden;
     min-width: 250px;
-    background-color: var(--dark-theme);
-    color: var(--nice-red);
+    background-color: var(--shadow-charcoal);
+    color: var(--crimson-blaze);
     text-align: center;
     border-radius: 2px;
     padding: 16px;
